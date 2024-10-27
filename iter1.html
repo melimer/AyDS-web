@@ -61,7 +61,7 @@
               RF2.
             </td>
             <td>
-              El usuario debería poder crear un perfil proporcionando su correo electrónico, un 
+              El usuario debería poder crear una cuenta proporcionando su correo electrónico, un 
               nombre de usuario, una contraseña, y su nombre completo. Para el usuario que sea persona embarazada, se 
               deberían de proporcionar los siguientes datos: las semanas del embarazo y el sexo del bebé en caso de conocerlo.
               Para el usuario que sea médico, debería de proporcionar su especialidad definida en la BR4, y su cédula profesional.
@@ -89,14 +89,20 @@
               RF5.
             </td>
             <td>
-              El usuario debería poder revisar los datos de su cuenta.</td>
+              El usuario debería poder visualizar los datos de su cuenta (correo electrónico,  
+              nombre de usuario y nombre completo). 
+              Para el usuario que sea persona embarazada, se 
+              deberían de visualizar los siguientes datos: las semanas del embarazo y el sexo del bebé en caso de conocerlo.
+              Para el usuario que sea médico, debería de visualizar su especialidad, y su cédula profesional.
+            </td>
           </tr>
           <tr>
             <td>
               RF6.
             </td>
             <td>
-              El usuario debería poder actualizar los datos de su cuenta. </td>
+              El usuario debería poder actualizar los datos de su cuenta (correo electrónico,  
+              nombre de usuario y nombre completo). </td>
           </tr>
           <tr>
             <td>
@@ -174,7 +180,7 @@
               RF16.
             </td>
             <td>
-              La persona embarazada debería poder compartir a su médico, mediante la plataforma, los resultados de estudios médicos en PDF. Al subir el archivo PDF (Formato de Documento Portatil) desde su dispositivo móvil o computador en el apartado de "Estudios médicos".  
+              La persona embarazada debería poder compartir a su médico, mediante la plataforma, los resultados de estudios médicos en PDF (Formato de Documento Portatil). Al subir el archivo PDF  desde su dispositivo móvil o computador en el apartado de "Estudios médicos".  
             </td>
           </tr>
           <tr>
@@ -198,7 +204,7 @@
               RF19.
             </td>
             <td>
-              La persona embarazada debería poder hacer una cita con su médico en el apartado de "Realizar citas médicas".
+              La persona embarazada debería poder hacer una cita, con los datos definidos en la BR5, con su médico en el apartado de "Realizar citas médicas".
               
             </td>
           </tr>
@@ -207,7 +213,7 @@
               RF20.
             </td>
             <td>
-              La persona embarazada debería poder actualizar una cita previamente agendada con su médico.
+              La persona embarazada debería poder actualizar una cita, con los datos definidos en la BR5, previamente agendada con su médico.
             </td>
           </tr>
           <tr>
@@ -239,7 +245,7 @@
               RF24.
             </td>
             <td>
-              El usuario debería poder realizar publicaciones en los foros predeterminados por el sistema.
+              El usuario debería poder realizar publicaciones (definidas en la BR6) en los foros predeterminados por el sistema.
             </td>
           </tr>
           <tr>
@@ -255,7 +261,7 @@
               RF26.
             </td>
             <td>
-              El usuario debería poder comentar las publicaciones de otros usuarios en los foros predeterminados por el sistema.
+              El usuario debería poder comentar (los comentarios están definidos en la BR7) las publicaciones de otros usuarios en los foros predeterminados por el sistema.
             </td>
           </tr>
           <tr>
@@ -271,7 +277,7 @@
               RF28.
             </td>
             <td>
-              El médico debería poder hacer una cita con las personas embarazadas que sean sus pacientes en el apartado de "Realizar citas médicas".
+              El médico debería poder hacer una cita, con los datos definidos en la BR5, con las personas embarazadas que sean sus pacientes en el apartado de "Realizar citas médicas".
               
             </td>
           </tr>
@@ -280,7 +286,7 @@
               RF29.
             </td>
             <td>
-              El médico debería poder actualizar una cita previamente agendada con las personas embarazadas que sean sus pacientes.
+              El médico debería poder actualizar una cita, con los datos definidos en la BR5, previamente agendada con las personas embarazadas que sean sus pacientes.
               
             </td>
           </tr>
@@ -315,7 +321,47 @@
               RF33.
             </td>
             <td>
-              El médico debería de poder contactarse mediante mensajes directos con las personas embarazadas que sean sus pacientes y viceversa.  
+              El médico debería de poder contactarse mediante mensajes directos con las personas embarazadas que sean sus pacientes.  
+            </td>
+          </tr>
+          <tr>
+            <td>
+              RF34.
+            </td>
+            <td>
+              El médico debería de poder visualizar los estudios médicos subidos por sus pacientes en formato PDF en el apartado de "Estudios médicos". 
+            </td>
+          </tr>
+          <tr>
+            <td>
+              RF35.
+            </td>
+            <td>
+              El médico debería de poder buscar los estudios médicos en formato PDF subidos por un paciente en particular en el apartado de "Estudios médicos". 
+            </td>
+          </tr>
+          <tr>
+            <td>
+              RF36.
+            </td>
+            <td>
+              La persona embarazada debería de poder contactarse mediante mensajes directos con su médico especialista.  
+            </td>
+          </tr>
+          <tr>
+            <td>
+              RF37.
+            </td>
+            <td>
+              El médico especialista debería poder ingresar sus horarios de consulta, incluyendo la longitud de una consulta.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              RF38.
+            </td>
+            <td>
+              Al agendar una cita, el sistema debería de mostrar únicamente los horarios disponibles (sin cita) del médico.
             </td>
           </tr>
         </tbody>
@@ -329,11 +375,74 @@
         <tbody>
           <tr>
             <td>
-              RF1
+              RFN1.
             </td>
             <td>
-              El usuario debería poder ingresar a su perfil proporcionando su correo electrónico o 
-              nombre de usuario y su contraseña.
+              La interfaz debería ser consistente en todas las pantallas del sistema.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              RFN2.
+            </td>
+            <td>La interfaz del sistema debería de ser responsiva, es decir, que se adapte a los diferentes tamaños de pantalla de los dispositivos que lo utilizan.
+              
+            </td>
+          </tr>
+          <tr>
+            <td>
+              RFN3.
+            </td>
+            <td>
+              Los campos obligatorios deben estar claramente marcados con una nota o un asterisco rojo.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              RFN4.
+            </td>
+            <td>
+              Los mensajes de error deben ser claros y describir el error.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              RFN5.
+            </td>
+            <td>
+              La terminología debe ser consistente en todo el sistema.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              RFN6.
+            </td>
+            <td>
+              Las contraseñas deben tener mínimo 8 caracteres, incluir mayúsculas, minúsculas, números y caracteres especiales
+            </td>
+          </tr>
+          <tr>
+            <td>
+              RFN7.
+            </td>
+            <td>
+              Las contraseñas deben almacenarse encriptadas con hash.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              RFN8.
+            </td>
+            <td>
+              Las sesiones deben invalidarse después del cierre de sesión.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              RFN9.
+            </td>
+            <td>
+              Los archivos subidos deben de ser del tipo Formato de Documento Portatil, comúnmente conocido como PDF.
             </td>
           </tr>
         </tbody>
@@ -347,13 +456,37 @@
         <tbody>
           <tr>
             <td>
-              RF1
+              RX1.
             </td>
             <td>
-              El usuario debería poder ingresar a su perfil proporcionando su correo electrónico o 
-              nombre de usuario y su contraseña.
+              El sistema debería de cumplir con los estándares de calidad definidos en la norma ISO 25010.
             </td>
           </tr>
+          <tr>
+            <td>
+              RX2.
+            </td>
+            <td>
+              El sistema web debería de ser codificado utilizando JAVA, Javascrip, CSS y HTML.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              RX2.
+            </td>
+            <td>
+              El sistema móvil debería de ser codificado utilizando JAVA.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              RX2.
+            </td>
+            <td>
+              La base de datos debería de ser elaborada utilizando SQL.
+            </td>
+          </tr>
+          
         </tbody>
       </table>
       <h1>Reglas de negocio</h1>
@@ -395,21 +528,62 @@
               Los médicos únicamente pueden tener dos especialidades: médico obstetra y médico ginecólogo.
             </td>
           </tr>
+          <tr>
+            <td>
+              BR5.
+            </td>
+            <td>
+              Las citas deben de contener la fecha, hora y la dirección (con el formato definido en la BR8) de la cita.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              BR6.
+            </td>
+            <td>
+              Las publicaciones de los foros 
+              Los médicos únicamente pueden tener dos especialidades: médico obstetra y médico ginecólogo.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              BR7.
+            </td>
+            <td>
+              Comentarios
+              Los médicos únicamente pueden tener dos especialidades: médico obstetra y médico ginecólogo.
+            </td>
+          </tr>
         </tbody>
       </table>
-      <h1>Modelo de Casos de Uso
-        
-        </h1>
-        Definición de Actores
-        Especificación en texto de Casos de Uso
-        Diseño de GUI con identificador y nombre
-        Incluye referencia a RN
-        Diagrama de Contexto del Sistema usando un diagrama General de Casos de Uso
-        Diagramas de Casos de Uso
+      <h1>Modelo de Casos de Uso</h1>
+      <h3>Actores</h3>
+      <h3>Casos de uso</h3>
+      <h1>Diagrama de contexto</h1>
+      <p>El siguiente diagrama de contexto muestra las entidades externas y los flujos de datos que entran y salen del sistema.
+      </p>
+      <div class="d-flex justify-content-center">
+        <img src="img/iter1/Dcontexto.png"/>
+      </div>
+      <p>El diagrama de contexto se amplia con el siguiente Diagrama de Flujo de Datos de Nivel 0, mostrando los procesos generales y almacenes de datos
+        del sistema.
+      </p>
+      <div class="d-flex justify-content-center">
+        <img src="img/iter1/dfdN0.png" style="max-width: 120%; height: auto;"/>
+      </div>
+      <p>El siguiente Diagrama de Flujo de Datos detalla el proceso de creación de una cita para un médico.
+      </p>
+      <div class="d-flex justify-content-center">
+      <img src="img/iter1/dfdN1.png" style="max-width: 120%; height: auto;"/>
     </div>
-    Avance (incremento) en el producto de SW
-Código
-Prototipos
+      <div>
+        <h5>Caso de uso: </h5>
+        <h5>Requerimientos asociados: </h5>
+        <h5>Diagrama de caso de uso: </h5>
+        <h5>Especificación de caso de uso: </h5>
+        <h5>GUI relevante: </h5>
+      </div>
+    </div>
 
     <footer name="footer" id="footer" class="footer">
       <br>
