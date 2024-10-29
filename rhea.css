@@ -56,13 +56,15 @@
   
   .h1_title{
     font-size: 600%;
-    color: #AD9F71;
+    color: #1F1F1F;
     padding-top: 10%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   .text_title{
-    font-size: 200%;
-    color: #AD9F71;
+    font-size: 150%;
+    color: #1F1F1F;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   /*Misión y visión*/
