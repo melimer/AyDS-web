@@ -204,7 +204,7 @@
               RF19.
             </td>
             <td>
-              La persona embarazada debería poder hacer una cita, con los datos definidos en la BR5, con su médico en el apartado de "Realizar citas médicas".
+              El usuario debería poder hacer una cita, con los datos definidos en la BR5.
               
             </td>
           </tr>
@@ -213,7 +213,7 @@
               RF20.
             </td>
             <td>
-              La persona embarazada debería poder actualizar una cita, con los datos definidos en la BR5, previamente agendada con su médico.
+              El usuario debería poder actualizar una cita previamente agendada, con los datos definidos en la BR5.
             </td>
           </tr>
           <tr>
@@ -221,7 +221,7 @@
               RF21.
             </td>
             <td>
-              La persona embarazada debería poder visualizar las citas previamente agendadas con su médico.
+              El usuario debería poder visualizar las citas previamente agendadas.
             </td>
           </tr>
           <tr>
@@ -229,7 +229,7 @@
               RF22.
             </td>
             <td>
-              La persona embarazada debería poder cancelar las citas previamente agendadas con su médico.
+              El usuario debería poder cancelar las citas previamente agendadas.
             </td>
           </tr>
           <tr>
@@ -261,7 +261,7 @@
               RF26.
             </td>
             <td>
-              El usuario debería poder comentar (los comentarios están definidos en la BR7) las publicaciones de otros usuarios en los foros predeterminados por el sistema.
+              El usuario debería poder replicar (las replicas están definidos en la BR7) las publicaciones de otros usuarios en los foros predeterminados por el sistema.
             </td>
           </tr>
           <tr>
@@ -269,7 +269,7 @@
               RF27.
             </td>
             <td>
-              El usuario debería poder eliminar los comentarios que ha realizado previamente en las publicaciones de otros usuarios en los foros predeterminados por el sistema.
+              El usuario debería poder eliminar las replicas que ha realizado previamente en las publicaciones de otros usuarios en los foros predeterminados por el sistema.
             </td>
           </tr>
           <tr>
@@ -277,8 +277,7 @@
               RF28.
             </td>
             <td>
-              El médico debería poder hacer una cita, con los datos definidos en la BR5, con las personas embarazadas que sean sus pacientes en el apartado de "Realizar citas médicas".
-              
+              El médico debería poder consultar los registros de síntomas guardados por las personas embarazadas que sean sus pacientes.  
             </td>
           </tr>
           <tr>
@@ -286,8 +285,7 @@
               RF29.
             </td>
             <td>
-              El médico debería poder actualizar una cita, con los datos definidos en la BR5, previamente agendada con las personas embarazadas que sean sus pacientes.
-              
+              El médico debería de poder contactarse mediante mensajes directos con las personas embarazadas que sean sus pacientes.  
             </td>
           </tr>
           <tr>
@@ -295,8 +293,7 @@
               RF30.
             </td>
             <td>
-              El médico debería poder visualizar las citas previamente agendadas con las personas embarazadas que sean sus pacientes.
-              
+              El médico debería de poder visualizar los estudios médicos subidos por sus pacientes en formato PDF en el apartado de "Estudios médicos". 
             </td>
           </tr>
           <tr>
@@ -304,8 +301,7 @@
               RF31.
             </td>
             <td>
-              El médico debería poder cancelar las citas previamente agendadas con las personas embarazadas que sean sus pacientes.
-              
+              El médico debería de poder buscar los estudios médicos en formato PDF subidos por un paciente en particular en el apartado de "Estudios médicos". 
             </td>
           </tr>
           <tr>
@@ -313,7 +309,7 @@
               RF32.
             </td>
             <td>
-              El médico debería poder consultar los registros de síntomas guardados por las personas embarazadas que sean sus pacientes.  
+              La persona embarazada debería de poder contactarse mediante mensajes directos con su médico especialista.  
             </td>
           </tr>
           <tr>
@@ -321,7 +317,7 @@
               RF33.
             </td>
             <td>
-              El médico debería de poder contactarse mediante mensajes directos con las personas embarazadas que sean sus pacientes.  
+              El médico especialista debería poder ingresar sus horarios de consulta, incluyendo la longitud de una consulta.
             </td>
           </tr>
           <tr>
@@ -329,7 +325,7 @@
               RF34.
             </td>
             <td>
-              El médico debería de poder visualizar los estudios médicos subidos por sus pacientes en formato PDF en el apartado de "Estudios médicos". 
+              Al agendar una cita, el sistema debería de mostrar únicamente los horarios disponibles (sin cita) del médico.
             </td>
           </tr>
           <tr>
@@ -337,31 +333,7 @@
               RF35.
             </td>
             <td>
-              El médico debería de poder buscar los estudios médicos en formato PDF subidos por un paciente en particular en el apartado de "Estudios médicos". 
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF36.
-            </td>
-            <td>
-              La persona embarazada debería de poder contactarse mediante mensajes directos con su médico especialista.  
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF37.
-            </td>
-            <td>
-              El médico especialista debería poder ingresar sus horarios de consulta, incluyendo la longitud de una consulta.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF38.
-            </td>
-            <td>
-              Al agendar una cita, el sistema debería de mostrar únicamente los horarios disponibles (sin cita) del médico.
+              El médico debería de poder consultar su calendario de citas agendadas con sus pacientes.
             </td>
           </tr>
         </tbody>
@@ -541,8 +513,7 @@
               BR6.
             </td>
             <td>
-              Las publicaciones de los foros 
-              Los médicos únicamente pueden tener dos especialidades: médico obstetra y médico ginecólogo.
+              Las publicaciones de los foros son escritos publicados por un usuario en un tema de un foro.
             </td>
           </tr>
           <tr>
@@ -550,8 +521,24 @@
               BR7.
             </td>
             <td>
-              Comentarios
-              Los médicos únicamente pueden tener dos especialidades: médico obstetra y médico ginecólogo.
+              Las réplicas son escritos de un usuario publicados como respuesta a una publicación de otro usuario o de un mismo usuario.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              BR8.
+            </td>
+            <td>
+              Las direcciones para las citas médicas están compuestas por: 
+              <ul>
+                <li>Estado</li>
+                <li>Municipio</li>
+                <li>Colonia</li>
+                <li>Calle</li>
+                <li>Número exterior</li>
+                <li>Número interior</li>
+                <li>Unidad médica</li>
+              </ul>
             </td>
           </tr>
         </tbody>
