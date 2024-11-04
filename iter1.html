@@ -1,580 +1,1482 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="rhea.css" media="screen">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <title>GAIA</title>
-  </head>
-  <body bgcolor="#000E29">
-    <nav class="navbar navbar-expand-lg border-bottom" style="background-color: white;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="img/logo2.png" class="logo" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" style="color: pink;">GAIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">ITERACIÓN 0</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="iter1.html">ITERACIÓN 1</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="iter2.html">ITERACIÓN 2</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="iter3.html">ITERACIÓN 3</a>
-            </li>
-            <li class="nav-item float-right ">
-              <a class="nav-link" href="Asteria.html" style="color:#AD9F71">SOBRE NOSOTROS</a>
-            </li>
-          </ul>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="rhea.css" media="screen">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+  <title>GAIA</title>
+</head>
+
+<body bgcolor="#000E29">
+  <nav class="navbar navbar-expand-lg border-bottom" style="background-color: white;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/logo2.png" class="logo" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color: pink;">GAIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">ITERACIÓN 0</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="iter1.html">ITERACIÓN 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="iter2.html">ITERACIÓN 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="iter3.html">ITERACIÓN 3</a>
+          </li>
+          <li class="nav-item float-right ">
+            <a class="nav-link" href="Asteria.html" style="color:#AD9F71">SOBRE NOSOTROS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>Requerimientos funcionales</h1>
+    <table class="table table-bordered">
+      <thead>
+        <th>Id.</th>
+        <th>Requerimiento</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            RF1.
+          </td>
+          <td>
+            El usuario debería poder ingresar a su perfil proporcionando su correo electrónico o
+            nombre de usuario y su contraseña.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF2.
+          </td>
+          <td>
+            El usuario debería poder crear una cuenta proporcionando su correo electrónico, un
+            nombre de usuario, una contraseña, y su nombre completo. Para el usuario que sea persona embarazada, se
+            deberían de proporcionar los siguientes datos: las semanas del embarazo y el sexo del bebé en caso de
+            conocerlo.
+            Para el usuario que sea médico, debería de proporcionar su especialidad definida en la BR4, y su cédula
+            profesional.
+
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF3.
+          </td>
+          <td>
+            El usuario debería poder recuperar su usuario o contraseña en caso de olvido en el inicio de sesión.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF4.
+          </td>
+          <td>
+            La persona embarazada debería poder acceder a apartados con textos informativos relevantes al embarazo y el
+            desarrollo del feto.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF5.
+          </td>
+          <td>
+            El usuario debería poder visualizar los datos de su cuenta (correo electrónico,
+            nombre de usuario y nombre completo).
+            Para el usuario que sea persona embarazada, se
+            deberían de visualizar los siguientes datos: las semanas del embarazo y el sexo del bebé en caso de
+            conocerlo.
+            Para el usuario que sea médico, debería de visualizar su especialidad, y su cédula profesional.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF6.
+          </td>
+          <td>
+            El usuario debería poder actualizar los datos de su cuenta (correo electrónico,
+            nombre de usuario y nombre completo). </td>
+        </tr>
+        <tr>
+          <td>
+            RF7.
+          </td>
+          <td>
+            El usuario debería poder eliminar su cuenta. </td>
+        </tr>
+        <tr>
+          <td>
+            RF8.
+          </td>
+          <td>
+            La persona embarazada debería poder registrar los síntomas definidos en la BR1 en el apartado de "Síntomas
+            del embarazo".
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF9.
+          </td>
+          <td>
+            La persona embarazada debería poder actualizar los síntomas definidos en la BR1 en el apartado de "Síntomas
+            del embarazo".
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF10.
+          </td>
+          <td>
+            La persona embarazada debería poder visualizar los síntomas definidos en la BR1 en el apartado de "Síntomas
+            del embarazo".
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF11.
+          </td>
+          <td>
+            La persona embarazada debería poder eliminar los registros de los síntomas que ha registrado en el apartado
+            de "Síntomas del embarazo".
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF12.
+          </td>
+          <td>
+            La persona embarazada debería poder registrar los cambios durante el embarazo definidos en la BR3 en el
+            apartado de "Cambios durante el embarazo".
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF13.
+          </td>
+          <td>
+            La persona embarazada debería poder actualizar los cambios durante el embarazo definidos en la BR3 en el
+            apartado de "Cambios durante el embarazo".
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF14.
+          </td>
+          <td>
+            La persona embarazada debería poder visualizar los cambios durante el embarazo definidos en la BR3 en el
+            apartado de "Cambios durante el embarazo".
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF15.
+          </td>
+          <td>
+            La persona embarazada debería poder eliminar los registros de los cambios durante el embarazo en el apartado
+            de "Cambios durante el embarazo".
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF16.
+          </td>
+          <td>
+            La persona embarazada debería poder compartir a su médico, mediante la plataforma, los resultados de
+            estudios médicos en PDF (Formato de Documento Portatil). Al subir el archivo PDF desde su dispositivo móvil
+            o computador en el apartado de "Estudios médicos".
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF17.
+          </td>
+          <td>
+            La persona embarazada debería poder visualizar los estudios médicos en PDF que ha subido previamente en el
+            apartado de "Estudios médicos".
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF18.
+          </td>
+          <td>
+            La persona embarazada debería poder eliminar los estudios médicos en PDF que ha subido previamente en el
+            apartado de "Estudios médicos".
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF19.
+          </td>
+          <td>
+            El usuario debería poder agendar una cita, con los datos definidos en la BR5.
+
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF20.
+          </td>
+          <td>
+            El usuario debería poder modificar una cita previamente agendada, con los datos definidos en la BR5.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF21.
+          </td>
+          <td>
+            El usuario debería poder consultar las citas previamente agendadas.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF22.
+          </td>
+          <td>
+            El usuario debería poder cancelar las citas previamente agendadas.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF23.
+          </td>
+          <td>
+            El usuario debería poder acceder a los foros predeterminados por el sistema.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF24.
+          </td>
+          <td>
+            El usuario debería poder realizar publicaciones (definidas en la BR6) en los foros predeterminados por el
+            sistema.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF25.
+          </td>
+          <td>
+            El usuario debería poder eliminar las publicaciones que ha hecho en los foros predeterminados por el
+            sistema.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF26.
+          </td>
+          <td>
+            El usuario debería poder replicar (las replicas están definidos en la BR7) las publicaciones de otros
+            usuarios en los foros predeterminados por el sistema.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF27.
+          </td>
+          <td>
+            El usuario debería poder eliminar las replicas que ha realizado previamente en las publicaciones de otros
+            usuarios en los foros predeterminados por el sistema.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF28.
+          </td>
+          <td>
+            El médico debería poder consultar los registros de síntomas guardados por las personas embarazadas que sean
+            sus pacientes.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF29.
+          </td>
+          <td>
+            El médico debería de poder contactarse mediante mensajes directos con las personas embarazadas que sean sus
+            pacientes.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF30.
+          </td>
+          <td>
+            El médico debería de poder visualizar los estudios médicos subidos por sus pacientes en formato PDF en el
+            apartado de "Estudios médicos".
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF31.
+          </td>
+          <td>
+            El médico debería de poder buscar los estudios médicos en formato PDF subidos por un paciente en particular
+            en el apartado de "Estudios médicos".
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF32.
+          </td>
+          <td>
+            La persona embarazada debería de poder contactarse mediante mensajes directos con su médico especialista.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF33.
+          </td>
+          <td>
+            El médico especialista debería poder ingresar sus horarios de consulta, incluyendo la longitud de una
+            consulta.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RF34.
+          </td>
+          <td>
+            Al agendar una cita, el sistema debería de mostrar únicamente los horarios disponibles (sin cita) del
+            médico.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h1>Requerimientos No funcionales</h1>
+    <table class="table table-bordered">
+      <thead>
+        <th>Id.</th>
+        <th>Requerimiento</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            RFN1.
+          </td>
+          <td>
+            La interfaz debería ser consistente en todas las pantallas del sistema.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RFN2.
+          </td>
+          <td>La interfaz del sistema debería de ser responsiva, es decir, que se adapte a los diferentes tamaños de
+            pantalla de los dispositivos que lo utilizan.
+
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RFN3.
+          </td>
+          <td>
+            Los campos obligatorios deben estar claramente marcados con una nota o un asterisco rojo.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RFN4.
+          </td>
+          <td>
+            Los mensajes de error deben ser claros y describir el error.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RFN5.
+          </td>
+          <td>
+            La terminología debe ser consistente en todo el sistema.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RFN6.
+          </td>
+          <td>
+            Las contraseñas deben tener mínimo 8 caracteres, incluir mayúsculas, minúsculas, números y caracteres
+            especiales
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RFN7.
+          </td>
+          <td>
+            Las contraseñas deben almacenarse encriptadas con hash.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RFN8.
+          </td>
+          <td>
+            Las sesiones deben invalidarse después del cierre de sesión.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RFN9.
+          </td>
+          <td>
+            Los archivos subidos deben de ser del tipo Formato de Documento Portatil, comúnmente conocido como PDF.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h1>Restricciones</h1>
+    <table class="table table-bordered">
+      <thead>
+        <th>Id.</th>
+        <th>Requerimiento</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            RX1.
+          </td>
+          <td>
+            El sistema debería de cumplir con los estándares de calidad definidos en la norma ISO 25010.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RX2.
+          </td>
+          <td>
+            El sistema web debería de ser codificado utilizando JAVA, Javascrip, CSS y HTML.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RX2.
+          </td>
+          <td>
+            El sistema móvil debería de ser codificado utilizando JAVA.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            RX2.
+          </td>
+          <td>
+            La base de datos debería de ser elaborada utilizando SQL.
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+    <h1>Reglas de negocio</h1>
+    <table class="table table-bordered">
+      <thead>
+        <th>Id.</th>
+        <th>Regla de negocio</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            BR1.
+          </td>
+          <td>
+            Los síntomas que se guardan en el sistema son: nauseas, fátiga, dolores, senos sensibles, hinchazón,
+            calambres, sangrado, vómitos, constipación, emociones definidas en la BR2 y comentarios adicionales.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            BR2.
+          </td>
+          <td>
+            Las emociones que se guardan en el sistema son: felicidad, tranquilidad, tristeza, disgusto, sensibilidad,
+            confusión, ira, angustia.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            BR3.
+          </td>
+          <td>
+            Los cambios durante el embarazo que se guardan en el sistema son: antojos, cambios en la textura de la piel,
+            frecuencia de orinación, secreciones lácteas y diámetro del estómago.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            BR4.
+          </td>
+          <td>
+            Los médicos únicamente pueden tener dos especialidades: médico obstetra y médico ginecólogo.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            BR5.
+          </td>
+          <td>
+            Las citas deben de contener la fecha, hora y la dirección (con el formato definido en la BR8) de la cita.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            BR6.
+          </td>
+          <td>
+            Las publicaciones de los foros son escritos publicados por un usuario en un tema de un foro.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            BR7.
+          </td>
+          <td>
+            Las réplicas son escritos de un usuario publicados como respuesta a una publicación de otro usuario o de un
+            mismo usuario.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            BR8.
+          </td>
+          <td>
+            Las direcciones para las citas médicas están compuestas por:
+            <ul>
+              <li>Estado</li>
+              <li>Municipio</li>
+              <li>Colonia</li>
+              <li>Calle</li>
+              <li>Número exterior</li>
+              <li>Número interior</li>
+              <li>Unidad médica</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h1>Diagrama de contexto</h1>
+    <p>El siguiente diagrama de contexto muestra las entidades externas y los flujos de datos que entran y salen del
+      sistema.
+    </p>
+    <div class="d-flex justify-content-center">
+      <img src="img/iter1/Dcontexto.png" />
+    </div>
+    <p>El diagrama de contexto se amplia con el siguiente Diagrama de Flujo de Datos de Nivel 0, mostrando los procesos
+      generales y almacenes de datos
+      del sistema.
+    </p>
+    <div class="d-flex justify-content-center">
+      <img src="img/iter1/dfdN0.png" style="max-width: 120%; height: auto;" />
+    </div>
+    <p>El siguiente Diagrama de Flujo de Datos detalla el proceso de creación de una cita para un médico.
+    </p>
+    <div class="d-flex justify-content-center">
+      <img src="img/iter1/dfdN1.png" style="max-width: 120%; height: auto;" />
+    </div>
+
+    <div>
+      <h1>Casos de uso</h1>
+      <h4>Módulo de Registros: Cambios durante el embarazo</h4>
+      <small>Autora: Martínez Castro María José</small><br>
+      <div class="d-flex justify-content-center">
+        <img src="img/iter1/casosuso/cambios.png" />
+      </div>
+      <p><b>Nombre:</b> Registrar cambios<br>
+        <b>Identificador:</b> C.U. 12<br>
+        <b>Descripción:</b> El actor principal, Persona Embarazada, interactúa con el sistema para el registro del
+        seguimiento de cambios durante su embarazo. <br>
+        <b>Precondiciones:</b> Contar con una cuenta del tipo “Persona embarazada”. Haber entrado a la aplicación<br>
+        <b>Flujo principal:</b>
+      <ol>
+        <li>La persona embarazada inicia sesión en el sistema.</li>
+        <li>Selecciona en el menú principal (UI 1) la opción de “Registros”.</li>
+        <li>Selecciona en el menú de registros (UI 2) la opción de “Cambios Físicos”.</li>
+        <li>Se presenta un formulario (UI 3) para ingresar los datos de los cambios:
+          <ol>
+            <li>Antojos</li>
+            <li>Cambios en la piel</li>
+            <li>Frecuencia al orinar</li>
+            <li>Tipos de cambios en la piel</li>
+            <li>Diámetro del vientre </li>
+            <li>Notas</li>
+          </ol>
+        </li>
+        <li>La persona embarazada completa el formulario y lo envía al hacer clic en “Guardar”.</li>
+        <li>El sistema valida los datos ingresados.</li>
+        <li>Si los datos son válidos, se almacenan en la base de datos.</li>
+        <li>Se muestra un mensaje de confirmación al usuario.</li>
+      </ol>
+      <b>Flujos Alternativos:</b>
+      <ul>
+        <li>Datos inválidos: Si los datos ingresados no cumplen con los criterios de validación, se muestra un mensaje
+          de error al usuario y se le solicita que corrija la información (UI 4).</li>
+        <li>Cancelación del proceso: La persona embarazada puede salir del proceso en cualquier momento antes de enviar
+          los datos y no se guardará lo que se llenó en el formulario.</li>
+      </ul>
+      <b>Post condiciones:</b>
+      <ul>
+        <li>Se ha creado un nuevo registro en la tabla de cambios con los datos ingresados por el usuario.</li>
+        <li>Se ha actualizado el registro del usuario con la fecha del último registro de cambios.
+        </li>
+      </ul>
+      </p>
+      <div class="d-flex justify-content-center">
+        <div>
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI1.png" style="width: 500px; height: auto;"><br>
+              <small>UI1 Menu principal</small>
+
+            </div>
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI2.png" style="width: 500px; height: auto;" /><br>
+              <small>UI2 Menu de registros</small>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI3.png" style="width: 500px; height: auto;" /><br>
+              <small>UI3 Formulario de registro de cambios</small>
+
+            </div>
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI4.png" style="width: 500px; height: auto;" /><br>
+              <small>UI4 Datos invalidos</small>
+
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-      <div class="container">
-      <h1>Requerimientos funcionales</h1>
-      <table class="table table-bordered">
-        <thead>
-          <th>Id.</th>
-          <th>Requerimiento</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              RF1.
-            </td>
-            <td>
-              El usuario debería poder ingresar a su perfil proporcionando su correo electrónico o 
-              nombre de usuario y su contraseña.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF2.
-            </td>
-            <td>
-              El usuario debería poder crear una cuenta proporcionando su correo electrónico, un 
-              nombre de usuario, una contraseña, y su nombre completo. Para el usuario que sea persona embarazada, se 
-              deberían de proporcionar los siguientes datos: las semanas del embarazo y el sexo del bebé en caso de conocerlo.
-              Para el usuario que sea médico, debería de proporcionar su especialidad definida en la BR4, y su cédula profesional.
-              
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF3.
-            </td>
-            <td>
-              El usuario debería poder recuperar su usuario o contraseña en caso de olvido en el inicio de sesión. 
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF4.
-            </td>
-            <td>
-              La persona embarazada debería poder acceder a apartados con textos informativos relevantes al embarazo y el desarrollo del feto.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF5.
-            </td>
-            <td>
-              El usuario debería poder visualizar los datos de su cuenta (correo electrónico,  
-              nombre de usuario y nombre completo). 
-              Para el usuario que sea persona embarazada, se 
-              deberían de visualizar los siguientes datos: las semanas del embarazo y el sexo del bebé en caso de conocerlo.
-              Para el usuario que sea médico, debería de visualizar su especialidad, y su cédula profesional.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF6.
-            </td>
-            <td>
-              El usuario debería poder actualizar los datos de su cuenta (correo electrónico,  
-              nombre de usuario y nombre completo). </td>
-          </tr>
-          <tr>
-            <td>
-              RF7.
-            </td>
-            <td>
-              El usuario debería poder eliminar su cuenta. </td>
-          </tr>
-          <tr>
-            <td>
-              RF8.
-            </td>
-            <td>
-              La persona embarazada debería poder registrar los síntomas definidos en la BR1 en el apartado de "Síntomas del embarazo".
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF9.
-            </td>
-            <td>
-              La persona embarazada debería poder actualizar los síntomas definidos en la BR1 en el apartado de "Síntomas del embarazo".
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF10.
-            </td>
-            <td>
-              La persona embarazada debería poder visualizar los síntomas definidos en la BR1 en el apartado de "Síntomas del embarazo".
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF11.
-            </td>
-            <td>
-              La persona embarazada debería poder eliminar los registros de los síntomas que ha registrado en el apartado de "Síntomas del embarazo".
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF12.
-            </td>
-            <td>
-              La persona embarazada debería poder registrar los cambios durante el embarazo definidos en la BR3 en el apartado de "Cambios durante el embarazo".
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF13.
-            </td>
-            <td>
-              La persona embarazada debería poder actualizar los cambios durante el embarazo definidos en la BR3 en el apartado de "Cambios durante el embarazo".
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF14.
-            </td>
-            <td>
-              La persona embarazada debería poder visualizar los cambios durante el embarazo definidos en la BR3 en el apartado de "Cambios durante el embarazo".
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF15.
-            </td>
-            <td>
-              La persona embarazada debería poder eliminar los registros de los cambios durante el embarazo en el apartado de "Cambios durante el embarazo".
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF16.
-            </td>
-            <td>
-              La persona embarazada debería poder compartir a su médico, mediante la plataforma, los resultados de estudios médicos en PDF (Formato de Documento Portatil). Al subir el archivo PDF  desde su dispositivo móvil o computador en el apartado de "Estudios médicos".  
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF17.
-            </td>
-            <td>
-              La persona embarazada debería poder visualizar los estudios médicos en PDF que ha subido previamente en el apartado de "Estudios médicos".  
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF18.
-            </td>
-            <td>
-              La persona embarazada debería poder eliminar los estudios médicos en PDF que ha subido previamente en el apartado de "Estudios médicos".  
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF19.
-            </td>
-            <td>
-              El usuario debería poder hacer una cita, con los datos definidos en la BR5.
-              
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF20.
-            </td>
-            <td>
-              El usuario debería poder actualizar una cita previamente agendada, con los datos definidos en la BR5.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF21.
-            </td>
-            <td>
-              El usuario debería poder visualizar las citas previamente agendadas.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF22.
-            </td>
-            <td>
-              El usuario debería poder cancelar las citas previamente agendadas.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF23.
-            </td>
-            <td>
-              El usuario debería poder acceder a los foros predeterminados por el sistema.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF24.
-            </td>
-            <td>
-              El usuario debería poder realizar publicaciones (definidas en la BR6) en los foros predeterminados por el sistema.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF25.
-            </td>
-            <td>
-              El usuario debería poder eliminar las publicaciones que ha hecho en los foros predeterminados por el sistema.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF26.
-            </td>
-            <td>
-              El usuario debería poder replicar (las replicas están definidos en la BR7) las publicaciones de otros usuarios en los foros predeterminados por el sistema.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF27.
-            </td>
-            <td>
-              El usuario debería poder eliminar las replicas que ha realizado previamente en las publicaciones de otros usuarios en los foros predeterminados por el sistema.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF28.
-            </td>
-            <td>
-              El médico debería poder consultar los registros de síntomas guardados por las personas embarazadas que sean sus pacientes.  
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF29.
-            </td>
-            <td>
-              El médico debería de poder contactarse mediante mensajes directos con las personas embarazadas que sean sus pacientes.  
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF30.
-            </td>
-            <td>
-              El médico debería de poder visualizar los estudios médicos subidos por sus pacientes en formato PDF en el apartado de "Estudios médicos". 
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF31.
-            </td>
-            <td>
-              El médico debería de poder buscar los estudios médicos en formato PDF subidos por un paciente en particular en el apartado de "Estudios médicos". 
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF32.
-            </td>
-            <td>
-              La persona embarazada debería de poder contactarse mediante mensajes directos con su médico especialista.  
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF33.
-            </td>
-            <td>
-              El médico especialista debería poder ingresar sus horarios de consulta, incluyendo la longitud de una consulta.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF34.
-            </td>
-            <td>
-              Al agendar una cita, el sistema debería de mostrar únicamente los horarios disponibles (sin cita) del médico.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RF35.
-            </td>
-            <td>
-              El médico debería de poder consultar su calendario de citas agendadas con sus pacientes.
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <h1>Requerimientos No funcionales</h1>
-      <table class="table table-bordered">
-        <thead>
-          <th>Id.</th>
-          <th>Requerimiento</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              RFN1.
-            </td>
-            <td>
-              La interfaz debería ser consistente en todas las pantallas del sistema.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RFN2.
-            </td>
-            <td>La interfaz del sistema debería de ser responsiva, es decir, que se adapte a los diferentes tamaños de pantalla de los dispositivos que lo utilizan.
-              
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RFN3.
-            </td>
-            <td>
-              Los campos obligatorios deben estar claramente marcados con una nota o un asterisco rojo.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RFN4.
-            </td>
-            <td>
-              Los mensajes de error deben ser claros y describir el error.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RFN5.
-            </td>
-            <td>
-              La terminología debe ser consistente en todo el sistema.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RFN6.
-            </td>
-            <td>
-              Las contraseñas deben tener mínimo 8 caracteres, incluir mayúsculas, minúsculas, números y caracteres especiales
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RFN7.
-            </td>
-            <td>
-              Las contraseñas deben almacenarse encriptadas con hash.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RFN8.
-            </td>
-            <td>
-              Las sesiones deben invalidarse después del cierre de sesión.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RFN9.
-            </td>
-            <td>
-              Los archivos subidos deben de ser del tipo Formato de Documento Portatil, comúnmente conocido como PDF.
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <h1>Restricciones</h1>
-      <table class="table table-bordered">
-        <thead>
-          <th>Id.</th>
-          <th>Requerimiento</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              RX1.
-            </td>
-            <td>
-              El sistema debería de cumplir con los estándares de calidad definidos en la norma ISO 25010.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RX2.
-            </td>
-            <td>
-              El sistema web debería de ser codificado utilizando JAVA, Javascrip, CSS y HTML.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RX2.
-            </td>
-            <td>
-              El sistema móvil debería de ser codificado utilizando JAVA.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              RX2.
-            </td>
-            <td>
-              La base de datos debería de ser elaborada utilizando SQL.
-            </td>
-          </tr>
-          
-        </tbody>
-      </table>
-      <h1>Reglas de negocio</h1>
-      <table class="table table-bordered">
-        <thead>
-          <th>Id.</th>
-          <th>Regla de negocio</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              BR1.
-            </td>
-            <td>
-              Los síntomas que se guardan en el sistema son: nauseas, fátiga, dolores, senos sensibles, hinchazón, calambres, sangrado, vómitos, constipación, emociones definidas en la BR2 y comentarios adicionales.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              BR2.
-            </td>
-            <td>
-              Las emociones que se guardan en el sistema son: felicidad, tranquilidad, tristeza, disgusto, sensibilidad, confusión, ira, angustia.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              BR3.
-            </td>
-            <td>
-              Los cambios durante el embarazo que se guardan en el sistema son: antojos, cambios en la textura de la piel, frecuencia de orinación, secreciones lácteas y diámetro del estómago.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              BR4.
-            </td>
-            <td>
-              Los médicos únicamente pueden tener dos especialidades: médico obstetra y médico ginecólogo.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              BR5.
-            </td>
-            <td>
-              Las citas deben de contener la fecha, hora y la dirección (con el formato definido en la BR8) de la cita.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              BR6.
-            </td>
-            <td>
-              Las publicaciones de los foros son escritos publicados por un usuario en un tema de un foro.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              BR7.
-            </td>
-            <td>
-              Las réplicas son escritos de un usuario publicados como respuesta a una publicación de otro usuario o de un mismo usuario.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              BR8.
-            </td>
-            <td>
-              Las direcciones para las citas médicas están compuestas por: 
-              <ul>
-                <li>Estado</li>
-                <li>Municipio</li>
-                <li>Colonia</li>
-                <li>Calle</li>
-                <li>Número exterior</li>
-                <li>Número interior</li>
-                <li>Unidad médica</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <h1>Modelo de Casos de Uso</h1>
-      <h3>Actores</h3>
-      <h3>Casos de uso</h3>
-      <h1>Diagrama de contexto</h1>
-      <p>El siguiente diagrama de contexto muestra las entidades externas y los flujos de datos que entran y salen del sistema.
+      <p>
+        <b>Nombre:</b> Eliminar registro<br>
+        <b>Identificador:</b> C.U. 15<br>
+        <b>Descripción:</b> El actor principal, Persona Embarazada, interactúa con el sistema para el eliminar un
+        registro
+        relacionado con el seguimiento de cambios durante su embarazo.<br>
+        <b>Precondiciones:</b> Contar con una cuenta del tipo “Persona embarazada”. Haber entrado a la aplicación.<br>
+        <b>Flujo principal:</b>
+      <ol>
+        <li>La persona embarazada selecciona el registro que desea eliminar.</li>
+        <li>El sistema confirma la eliminación (UI 5).</li>
+        <li>Si la persona embarazada confirma, se elimina el registro de la base de datos.</li>
+      </ol>
+
+      <b>Flujos alternativos:</b>
+      <ul>
+        <li>Cancelación del proceso: La persona embarazada puede salir del proceso en cualquier momento antes de
+          confirmar
+          la eliminación y se mantendrá el registro.</li>
+      </ul>
+      <b>Post condiciones:</b>
+      <ul>
+        <li>Se ha eliminado físicamente el registro de la base de datos.</li>
+      </ul>
+
       </p>
       <div class="d-flex justify-content-center">
-        <img src="img/iter1/Dcontexto.png"/>
+        <div>
+          <img src="img/iter1/pantallas/UI5.png" style="width: 500px; height: auto;" /><br>
+          <small>UI5 Ventana emergente de confirmación de eliminación de registro</small>
+        </div>
       </div>
-      <p>El diagrama de contexto se amplia con el siguiente Diagrama de Flujo de Datos de Nivel 0, mostrando los procesos generales y almacenes de datos
-        del sistema.
+
+      <p>
+        <b>Nombre:</b> Actualizar registro<br>
+        <b>Identificador:</b> C.U. 13<br>
+        <b>Descripción:</b> El actor principal, Persona Embarazada, interactúa con el sistema para el editar un
+        registro. <br>
+        <b>Precondiciones:</b> Contar con una cuenta del tipo “Persona embarazada”. Haber entrado a la aplicación<br>
+        <b>Flujo principal:</b>
+      <ol>
+        <li>La persona embarazada selecciona el registro que desea modificar.</li>
+        <li>Se muestra el formulario con los datos actuales del registro y se selecciona “Actualizar” (UI 6).</li>
+        <li>La persona embarazada realiza los cambios necesarios y al finalizar da a guardar cambios (UI 7).</li>
+        <li>El sistema guarda los cambios.</li>
+      </ol>
+      <b>Flujos alternativos:</b>
+      <ul>
+        <li>Cancelación del proceso: La persona embarazada puede salir del proceso en cualquier momento antes de
+          confirmar la información y no se guardarán los cambios.</li>
+        <li>Datos inválidos: Si los datos ingresados no cumplen con los criterios de validación, se muestra un mensaje
+          de error al usuario y se le solicita que corrija la información.</li>
+      </ul>
+      <b>Post condiciones:</b>
+      <ul>
+        <li>Los campos modificados en el registro se han actualizado en la base de datos.</li>
+        <li>Se ha registrado la fecha y hora de la última actualización.</li>
+      </ul>
       </p>
       <div class="d-flex justify-content-center">
-        <img src="img/iter1/dfdN0.png" style="max-width: 120%; height: auto;"/>
+        <div>
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI6.png" style="width: 500px; height: auto;" /><br>
+              <small>UI6 Visualización de registro</small>
+            </div>
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI7.png" style="width: 500px; height: auto;" /><br>
+              <small>UI7 Modificación de registro</small>
+            </div>
+          </div>
+        </div>
       </div>
-      <p>El siguiente Diagrama de Flujo de Datos detalla el proceso de creación de una cita para un médico.
+
+      <p>
+        <b>Nombre:</b> Visualizar registro<br>
+        <b>Identificador:</b> C.U. 14<br>
+        <b>Descripción:</b> El actor principal, Persona Embarazada, interactúa con el sistema para el visualizar un
+        registro
+        relacionado con el seguimiento de cambios durante su embarazo.<br>
+        <b>Precondiciones:</b> Contar con una cuenta del tipo “Persona embarazada”. Haber entrado a la aplicación.<br>
+        <b>Flujo principal:</b>
+      <ol>
+        <li>Iniciar sesión en el sistema.</li>
+        <li>Selecciona en el menú principal la opción de “Registros”.</li>
+        <li>Selecciona en el menú de registros la opción de “Cambios Físicos”.</li>
+        <li>La persona embarazada puede visualizar todos los registros que ha hecho (UI 8).</li>
+      </ol>
       </p>
       <div class="d-flex justify-content-center">
-      <img src="img/iter1/dfdN1.png" style="max-width: 120%; height: auto;"/>
-    </div>
+        <div>
+          <img src="img/iter1/pantallas/UI8.png" style="width: 500px; height: auto;" /><br>
+          <small>UI8 Visualización de todos los registros</small>
+        </div>
+      </div>
+      <h4>Módulo de Registros: Síntomas durante el embarazo</h4>
+      <small>Autora: Martínez Castro María José</small><br>
+      <div class="d-flex justify-content-center">
+        <img src="img/iter1/casosuso/sintomas.png" />
+      </div>
+      <p>
+        <b>Nombre:</b> Registrar síntomas<br>
+        <b>Identificador:</b> C.U. 8<br>
+        <b>Descripción:</b> El actor principal, Persona Embarazada, interactúa con el sistema para el registrar síntomas
+        de su
+        embarazo.<br>
+        <b>Precondiciones:</b> Contar con una cuenta del tipo “Persona embarazada”. Haber entrado a la aplicación.<br>
+        <b>Flujo principal:</b>
+      <ol>
+        <li>La persona embarazada inicia sesión en el sistema.</li>
+        <li>Selecciona en el menú principal la opción de “Registros” (UI 1).</li>
+        <li>Selecciona en el menú de registros la opción de “Síntomas” (UI9).</li>
+        <li>Se presenta un formulario para ingresar los datos de los cambios:</li>
+        <ol>
+          <li>Nauseas</li>
+          <li>Fatiga</li>
+          <li>Dolor de cabeza</li>
+          <li>Senos sensibles</li>
+          <li>Hinchazón</li>
+          <li>Constipación</li>
+          <li>Calambres</li>
+          <li>Emociones (sentimientos al momento de hacer el registro)</li>
+          <li>Vomito</li>
+          <li>Sangrado</li>
+          <li>Felicidad</li>
+          <li>Tristeza</li>
+          <li>Sensibilidad</li>
+          <li>Ira</li>
+          <li>Angustia</li>
+          <li>Confusión</li>
+          <li>Tranquilidad</li>
+          <li>Disgusto</li>
+        </ol>
+        <li>La persona embarazada completa el formulario (UI 10) y lo envía.</li>
+        <li>El sistema valida los datos ingresados.</li>
+        <li>Si los datos son válidos, se almacenan en la base de datos.</li>
+        <li>Se muestra un mensaje de confirmación al usuario.</li>
+      </ol>
+      <b>Flujos alternativos:</b>
+      <ul>
+        <li>Datos inválidos: Si los datos ingresados no cumplen con los criterios de validación, se muestra un mensaje
+          de
+          error al usuario y se le solicita que corrija la información (UI 11).</li>
+        <li>Cancelación del proceso: La persona embarazada puede salir del proceso en cualquier momento antes de enviar
+          los datos y no se guardará lo que se llenó en el formulario.</li>
+      </ul>
+      <b>Post condiciones:</b>
+      <ul>
+        <li>Se ha creado un nuevo registro en la tabla de síntomas con los síntomas indicados por la usuaria.</li>
+        <li>Se ha actualizado el registro de la usuaria con la fecha del último registro de síntomas. </li>
+      </ul>
+      </p>
+      <div class="d-flex justify-content-center">
+        <div>
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI9.png" style="width: 500px; height: auto;" /><br>
+              <small>UI9 Menú de registros</small>
+            </div>
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI10.png" style="width: 500px; height: auto;" /><br>
+              <small>UI10 Formulario de registro de síntomas</small>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <img src="img/iter1/pantallas/UI11.png" style="width: 500px; height: auto;" /><br>
+              <small>UI11 Mensaje de error</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        <b>Nombre:</b> Eliminar registro<br>
+        <b>Identificador:</b> C.U. 11<br>
+        <b>Descripción:</b> El actor principal, Persona Embarazada, interactúa con el sistema para el eliminar un
+        registro
+        relacionado con los síntomas durante su embarazo.<br>
+        <b>Precondiciones:</b> Contar con una cuenta del tipo “Persona embarazada”. Haber entrado a la aplicación.<br>
+        <b>Flujo principal:</b>
+      <ol>
+        <li>La persona embarazada selecciona el registro que desea eliminar (UI 13).</li>
+        <li>El sistema confirma la eliminación.</li>
+        <li>Si la persona embarazada confirma, se elimina el registro de la base de datos (UI 12).</li>
+      </ol>
+      <b>Flujos alternativos:</b>
+      <ul>
+        <li>Cancelación del proceso: La persona embarazada puede salir del proceso en cualquier momento antes de
+          confirmar
+          la eliminación y se mantendrá el registro.</li>
+      </ul>
+      <b>Post condiciones:</b>
+      <ul>
+        <li>Se ha eliminado físicamente el registro de la base de datos.</li>
+      </ul>
+      </p>
+      <div class="d-flex justify-content-center">
+        <div>
+          <img src="img/iter1/pantallas/UI12.png" style="width: 500px; height: auto;" /><br>
+          <small>UI12 Ventana emergente de confirma de la eliminación de un registro.</small>
+        </div>
+      </div>
+
+      <p>
+        <b>Nombre:</b> Actualizar registro<br>
+        <b>Identificador:</b> C.U. 9<br>
+        <b>Descripción:</b> El actor principal, Persona Embarazada, interactúa con el sistema para el editar un registro
+        relacionado con el seguimiento de cambios durante su embarazo.<br>
+        <b>Precondiciones:</b> Contar con una cuenta del tipo “Persona embarazada”. Haber entrado a la aplicación.<br>
+
+        <b>Flujo principal:</b>
+      <ol>
+        <li>La persona embarazada selecciona el registro que desea modificar (UI 13).</li>
+        <li>Se muestra el formulario con los datos actuales del registro (UI 10).</li>
+        <li>La persona embarazada realiza los cambios necesarios.</li>
+        <li>El sistema guarda los cambios.</li>
+      </ol>
+      <b>Flujos alternativos:</b>
+      <ul>
+        <li>Cancelación del proceso: La persona embarazada puede salir del proceso en cualquier momento antes de
+          confirmar
+          la información y no se guardarán los cambios.</li>
+        <li>Datos inválidos: Si los datos ingresados no cumplen con los criterios de validación, se muestra un mensaje
+          de
+          error al usuario y se le solicita que corrija la información.</li>
+      </ul>
+      <b>Post condiciones:</b>
+      <ul>
+        <li>Los campos modificados en el registro se han actualizado en la base de datos.</li>
+        <li>Se ha registrado la fecha y hora de la última actualización.</li>
+      </ul>
+      </p>
+
+      <p>
+        <b>Nombre:</b> Visualizar registro
+        <b>Identificador:</b> C.U. 10
+        <b>Descripción:</b> El actor principal, Persona Embarazada, interactúa con el sistema para el visualizar
+        registros
+        relacionados con el seguimiento de cambios durante su embarazo.
+        <b>Precondiciones:</b> Contar con una cuenta del tipo “Persona embarazada”. Haber entrado a la aplicación.
+        <b>Flujo principal:</b>
+      <ol>
+        <li>Iniciar sesión en el sistema.</li>
+        <li>Selecciona en el menú principal la opción de “Registros” (UI 1).</li>
+        <li>Selecciona en el menú de registros la opción de “Síntomas” (UI 9).</li>
+        <li>La persona embarazada puede visualizar todos los registros que ha hecho (UI 13).</li>
+      </ol>
+      </p>
+      <div class="d-flex justify-content-center">
+        <div>
+          <img src="img/iter1/pantallas/UI13.png" style="width: 500px; height: auto;" /><br>
+          <small>UI13 Visualización de todos los registros.</small>
+        </div>
+      </div>
+
+
+      <h4>Módulo de Registros: Estudios Médicos</h4>
+      <small>Autora: Martínez Castro María José</small><br>
+      <div class="d-flex justify-content-center">
+        <img src="img/iter1/casosuso/estudios.png" />
+      </div>
+      <p>
+        <b>Nombre:</b> Subir estudio<br>
+        <b>Identificador:</b> C.U. 16<br>
+        <b>Descripción:</b> El actor principal, Persona Embarazada, interactúa con el sistema para subir un estudio
+        médico.<br>
+        <b>Precondiciones:</b> Contar con una cuenta del tipo “Persona embarazada”. Haber entrado a la aplicación.<br>
+        <b>Flujo principal:</b>
+      <ol>
+        <li>La persona embarazada inicia sesión en el sistema.</li>
+        <li>Selecciona la opción "Registrar estudios médicos" (UI 14).</li>
+        <li>Se presenta una opción para cargar el archivo del estudio médico.</li>
+        <li>La persona embarazada selecciona el archivo y lo carga (UI 15).</li>
+        <li>El sistema valida el formato del archivo.</li>
+        <li>Si el formato es válido, se almacena el archivo en el sistema.</li>
+        <li>Se muestra un mensaje de confirmación al usuario (UI 16).</li>
+      </ol>
+
+      <b>Flujos alternativos:</b>
+      <ul>
+        <li>Formato de archivo inválido: Si el formato del archivo no es compatible, se muestra un mensaje de error al
+          usuario (UI 17).</li>
+        <li>Error al cargar el archivo: Si ocurre algún error durante la carga del archivo, se muestra un mensaje de
+          error
+          al usuario (UI 18).</li>
+      </ul>
+
+      <b>Post condiciones:</b>
+      <ul>
+        <li>Se ha creado un nuevo registro en la sección de estudios médicos con la información del estudio.</li>
+        <li>Se ha asociado el estudio al registro del usuario.</li>
+        <li>El archivo del estudio se ha almacenado en el servidor en una ubicación segura.</li>
+      </ul>
+      </p>
+      <div class="d-flex justify-content-center">
+        <div>
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI14.png" style="width: 500px; height: auto;" /><br>
+              <small>UI14 Menú de registros</small>
+            </div>
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI15.png" style="width: 500px; height: auto;" /><br>
+              <small>UI15 Formulario de registro de estudio medico</small>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI16.png" style="width: 500px; height: auto;" /><br>
+              <small>UI16 Mensaje de éxito</small>
+            </div>
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI17.png" style="width: 500px; height: auto;" /><br>
+              <small>UI17 Mensaje de error de formato</small>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <img src="img/iter1/pantallas/UI18.png" style="width: 500px; height: auto;" /><br>
+              <small>UI18 Mensaje de error de carga</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        <b>Nombre:</b> Eliminar estudio<br>
+        <b>Identificador:</b> C.U. 18<br>
+        <b>Descripción:</b> El actor principal elimina un estudio médico.<br>
+        <b>Precondiciones:</b> Contar con una cuenta del tipo “Persona embarazada”. Haber entrado a la aplicación.<br>
+        <b>Flujo principal:</b>
+      <ol>
+        <li>La persona embarazada selecciona el estudio que desea eliminar (UI 19).</li>
+        <li>El sistema confirma la eliminación.</li>
+        <li>Si la persona embarazada confirma, se elimina el registro de la base de datos.</li>
+      </ol>
+      <b>Flujos alternativos:</b>
+      <ul>
+        <li>Cancelación del proceso: La persona embarazada puede salir del proceso en cualquier momento antes de
+          confirmar
+          la eliminación y se mantendrá el estudio subido.</li>
+      </ul>
+      <b>Post condiciones:</b>
+      <ul>
+        <li>Se ha eliminado físicamente el estudio de la base de datos.</li>
+      </ul>
+      </p>
+
+      <p>
+        <b>Nombre:</b> Visualizar estudio
+        <b>Identificador:</b> C.U. 17
+        <b>Descripción:</b> El actor principal visualiza en el sistema para los estudios médicos.
+        <b>Precondiciones:</b> Contar con una cuenta del tipo “Persona embarazada”. Haber entrado a la aplicación
+        <b>Flujo principal:</b>
+      <ol>
+        <li>Iniciar sesión en el sistema.</li>
+        <li>Selecciona en el menú principal la opción de “Registros” (UI 1).</li>
+        <li>Selecciona en el menú de registros la opción de “Estudios Médicos” (UI 14).</li>
+        <li>La persona embarazada puede visualizar todos los registros que ha hecho (UI 19).</li>
+      </ol>
+      </p>
+      <div class="d-flex justify-content-center">
+        <div>
+          <img src="img/iter1/pantallas/UI19.png" style="width: 500px; height: auto;" /><br>
+          <small>UI19 Visualización de todos los estudios médicos.</small>
+        </div>
+      </div>
+
+      <h4>Módulo de Citas</h4>
+      <small>Autora: Mercado Vargas Melisa</small><br>
+      <div class="d-flex justify-content-center">
+        <img src="img/iter1/casosuso/citas.png" />
+      </div>
+      <p>
+        <b>Nombre:</b> Agendar cita<br>
+        <b>Identificador:</b> C.U. 19<br>
+        <b>Descripción:</b> Agendar una cita con un médico o una persona embarazada.<br>
+        <b>Precondiciones:</b> El usuario se ha identificado previamente dentro del sistema.<br>
+        <b>Postcondiciones:</b> Se habrá agendado una cita.<br>
+        <b>Flujo básico:</b>
+      <ol>
+        <li>El caso de uso inicia cuando el usuario desea agendar una cita con otro usuario en específico.</li>
+        <li>Si el usuario es del tipo persona embarazada, se va al flujo alterno A, de lo contrario, si el usuario es
+          del
+          tipo médico, el sistema despliega las fechas, los horarios y las ubicaciones disponibles (UI 20).</li>
+        <li>El médico selecciona la fecha, hora y ubicación de la cita.</li>
+        <li>El médico decide si guarda o no la cita. [Flujo alterno B]</li>
+        <li>El sistema guarda la cita en la agenda del médico y la agrega a la agenda de la persona embarazada.</li>
+        <li>Termina el caso de uso cuando la cita haya sido agendada.</li>
+      </ol>
+      <b>Flujo alterno A. El usuario es una persona embarazada:</b>
+      <ol start="2">
+        <li>El sistema despliega las fechas y los horarios disponibles para agendar una cita con el médico seleccionado
+          (UI 20).</li>
+        <li>La persona embarazada selecciona la fecha, hora y ubicación de la cita.</li>
+        <li>La persona embarazada decide si guarda o no la cita. [Flujo alterno B]</li>
+        <li>El sistema guarda la cita en la agenda del médico y la agrega a la agenda de la persona embarazada.</li>
+        <li>Termina el caso de uso cuando la cita haya sido agendada.</li>
+      </ol>
+      <b>Flujo alterno B. El usuario decide no agendar la cita:</b>
+      <ol start="4">
+        <li>El sistema regresa al usuario a la pantalla principal.</li>
+        <li>Termina el caso de uso.</li>
+      </ol>
+      </p>
+      <div class="d-flex justify-content-center">
+        <div>
+          <img src="img/iter1/pantallas/UI20.png" style="width: 500px; height: auto;" /><br>
+          <small>UI20 Formulario de agenda de cita.</small>
+        </div>
+      </div>
+
+      <p>
+        <b>Nombre:</b> Modificar cita<br>
+        <b>Identificador:</b> C.U. 20<br>
+        <b>Descripción:</b> Modificar una cita previamente agendada con un médico o una persona embarazada.<br>
+        <b>Precondiciones:</b> El usuario se ha identificado previamente dentro del sistema.<br>
+        <b>Postcondiciones:</b> Se habrá modificado la cita previamente agendada.<br>
+        <b>Flujo básico:</b>
+      <ol>
+        <li>El caso de uso inicia cuando el usuario desea modificar una cita previamente agendada con otro usuario en
+          especifico.</li>
+        <li>Si el usuario es del tipo persona embarazada, se va al flujo alterno A, de lo contrario, si el usuario es
+          del
+          tipo médico, el sistema despliega los datos actuales de la cita agendada (UI 21).</li>
+        <li>El médico selecciona la fecha, hora o ubicación nuevas de la cita.</li>
+        <li>El médico decide si guarda o no la cita. [Flujo alterno B]</li>
+        <li>El sistema notifica a la persona embarazada con la que se ha agendado la cita de las modificaciones.</li>
+        <li>Termina el caso de uso cuando la cita haya sido modificada.</li>
+      </ol>
+      <b>Flujo alterno A. El usuario es una persona embarazada:</b>
+      <ol start="2">
+        <li>El sistema despliega los datos actuales de la cita agendada (UI 21).</li>
+        <li>La persona embarazada selecciona la fecha, hora o ubicación nuevas de la cita.</li>
+        <li>La persona embarazada decide si guarda o no la cita. [Flujo alterno B]</li>
+        <li>El sistema notifica al médico con el que se ha agendado la cita de las modificaciones.</li>
+        <li>Termina el caso de uso cuando la cita haya sido modificada.</li>
+      </ol>
+      <b>Flujo alterno B. El usuario decide no modificar la cita:</b>
+      <ol start="4">
+        <li>El sistema regresa al usuario a la pantalla principal.</li>
+        <li>Termina el caso de uso.</li>
+      </ol>
+      </p>
+      <div class="d-flex justify-content-center">
+        <div>
+          <img src="img/iter1/pantallas/UI21.png" style="width: 500px; height: auto;" /><br>
+          <small>UI21 Formulario de modificación de cita.</small>
+        </div>
+      </div>
+
+
+      <p>
+        <b>Nombre:</b> Consultar citas<br>
+        <b>Identificador:</b> C.U. 21<br>
+        <b>Descripción:</b> Visualizar las citas previamente agendadas con un médico o una persona embarazada.<br>
+        <b>Precondiciones:</b> El usuario se ha identificado previamente dentro del sistema.<br>
+        <b>Postcondiciones:</b> Ninguna.<br>
+        <b>Flujo básico:</b>
+      <ol>
+        <li>El caso de uso inicia cuando el usuario desea visualizar las citas previamente agendadas.</li>
+        <li>El sistema despliega las citas previamente agendadas, en un orden ascendente según la fecha (UI 22).</li>
+        <li>El usuario selecciona una cita.</li>
+        <li>El sistema despliega los detalles de la cita (UI 23).</li>
+        <li>Termina el caso de uso cuando el sistema haya desplegado la cita.</li>
+      </ol>
+      </p>
+      <div class="d-flex justify-content-center">
+        <div>
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI22.png" style="width: 500px; height: auto;" /><br>
+              <small>UI22 Visualización de citas</small>
+            </div>
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI23.png" style="width: 500px; height: auto;" /><br>
+              <small>UI23 Visualización de cita individual</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        <b>Nombre:</b> Cancelar cita<br>
+        <b>Identificador:</b> C.U. 22<br>
+        <b>Descripción:</b> Cancelar una cita previamente agendada con un médico o una persona embarazada.<br>
+        <b>Precondiciones:</b> El usuario se ha identificado previamente dentro del sistema.<br>
+        <b>Postcondiciones:</b> Se habrá cancelado la cita previamente agendada.<br>
+        <b>Flujo básico:</b>
+      <ol>
+        <li>El caso de uso inicia cuando el usuario desea modificar una cita previamente agendada con otro usuario en
+          especifico.</li>
+        <li>El usuario selecciona la cita a cancelar.</li>
+        <li>El sistema despliega la cita a cancelar (UI 23).</li>
+        <li>El usuario selecciona la opción de cancelar cita.</li>
+        <li>El sistema despliega una ventana emergente preguntando si el usuario está seguro de la cancelación (UI 24).
+        </li>
+        <li>Si el usuario no desea cancelar la cita, se procede al flujo alterno A, de lo contrario el usuario
+          selecciona
+          que si desea cancelar la cita.</li>
+        <li>El sistema notifica al usuario con el que se ha agendado la cita de la cancelación.</li>
+        <li>El sistema regresa a la sección de consulta de citas</li>
+        <li>Termina el caso de uso cuando la cita haya sido cancelada.</li>
+      </ol>
+      <b>Flujo alterno A. El usuario no desea cancelar la cita:</b>
+      <ol start="2">
+        <li>El sistema quita la ventana emergente.</li>
+        <li>Termina el caso de uso cuando se haya cerrado la ventana emergente.</li>
+      </ol>
+      </p>
+      <div class="d-flex justify-content-center">
+        <div>
+          <img src="img/iter1/pantallas/UI24.png" style="width: 500px; height: auto;" /><br>
+          <small>UI24 Ventana emergente de cancelación de cita.</small>
+        </div>
+      </div>
+
+
+      <h4>Módulo de Mensajes Directos</h4>
+      <small>Autor: Zamora Jimenez Gerardo Miguel</small><br>
+      <div class="d-flex justify-content-center">
+        <img src="img/iter1/casosuso/mensajes.png" />
+      </div>
+      <p>
+        <b>Nombre:</b> Enviar mensaje directo<br>
+        <b>Identificador:</b> C.U. 32<br>
+        <b>Descripción:</b> Un usuario envía un mensaje directo a otro usuario.<br>
+        <b>Precondiciones:</b> El usuario se ha identificado previamente dentro del sistema.<br>
+        <b>Postcondiciones:</b> Un mensaje directo se envía a otro usuario.<br>
+        <b>Flujo básico:</b>
+      <ol>
+        <li>El caso de uso comienza cuando el usuario desea mandar un mensaje directo a otro usuario.</li>
+        <li>El usuario selecciona un usuario disponible de la lista UI 25 de acuerdo a la regla de negocio BR9.</li>
+        <li>El sistema despliega la lista de mensajes previos entre ambos usuarios UI 26.</li>
+        <li>El usuario escribe en el cuadro de texto el mensaje, luego presiona el botón de envío. [Flujo alternativo A]
+        </li>
+        <li>El sistema notifica al usuario destino del nuevo mensaje.</li>
+        <li>El caso de uso termina cuando el sistema despliega el nuevo mensaje en la lista de mensajes.</li>
+      </ol>
+      <b>Flujo alterno A. Error de conexión:</b>
+      <ol>
+        <li>El sistema despliega el mensaje enviado en la lista de mensajes pero indicando con un icono el error UI 27.
+        </li>
+      </ol>
+      </p>
+
+
+      <div class="d-flex justify-content-center">
+        <div>
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI25.png" style="width: 500px; height: auto;" /><br>
+              <small>UI25 Lista de mensajes directos</small>
+            </div>
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI26.png" style="width: 500px; height: auto;" /><br>
+              <small>UI26 Ventana de mensajes directos</small>
+            </div>
+          </div>div class="row">
+          <div class="col-md-6 col-12">
+            <img src="img/iter1/pantallas/UI27.png" style="width: 500px; height: auto;" /><br>
+            <small>UI27 Error al enviar mensaje</small>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <p>
+        <b>Nombre:</b> Recibir mensaje directo<br>
+        <b>Identificador:</b> C.U. 32<br>
+        <b>Descripción:</b> Un usuario visualiza un mensaje nuevo recibido.<br>
+        <b>Precondiciones:</b> El usuario se ha identificado previamente dentro del sistema.<br>
+        <b>Postcondiciones:</b> Se despliega en pantalla el mensaje nuevo recibido.<br>
+        <b>Flujo básico:</b>
+      <ol>
+        <li>El caso de uso comienza cuando el usuario desea leer el nuevo mensaje recibido.</li>
+        <li>El sistema despliega un icono de nuevo mensaje en la sección del usuario que lo envío UI 28.</li>
+        <li>El usuario selecciona al usuario que envió el nuevo mensaje.</li>
+        <li>4.	El sistema despliega la lista de mensajes entre ambos usuarios, mostrando el mensaje recibido en la parte inferior de la lista UI 29.</li>
+        <li>El caso de uso termina cuando el usuario lee el nuevo mensaje recibido.</li>
+      </ol>
+      </p>
+
+      <div class="d-flex justify-content-center">
+        <div>
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI28.png" style="width: 500px; height: auto;" /><br>
+              <small>UI28 Notificación de nuevo mensaje</small>
+            </div>
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI29.png" style="width: 500px; height: auto;" /><br>
+              <small>UI29 Pantalla de envío de mensajes</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <h4>Módulo de Foro</h4>
+      <small>Autora: Aviles Romero Karla Itzel</small><br>
+      <div class="d-flex justify-content-center">
+        <img src="img/iter1/casosuso/foro.png" />
+      </div>
+
+      <p>
+        <b>Nombre:</b> Acceder al foro<br>
+        <b>Identificador:</b> C.U. 23<br>
+        <b>Descripción:</b> Permite acceder a una lista de foros ordenados por temas.<br>
+        <b>Precondiciones:</b> El usuario se ha identificado previamente dentro del sistema.<br>
+        <b>Postcondiciones:</b> Acceso a la lista de publicaciones en el foro.<br>
+        <b>Flujo básico:</b>
+      <ol>
+        <li>El usuario entra a la sección de “Foros” que se muestra en la “pantalla de inicio” del sistema.</li>
+        <li>El sistema muestra en pantalla las opciones de foros a los que se puede acceder.
+          <ol type="a">
+            <li>Persona embarazada
+              <ol type="i">
+                <li>Salud embarazo</li>
+                <li>Cuidados</li>
+                <li>Preparación financiera</li>
+                <li>Preparación para el parto</li>
+                <li>Tema libre</li>
+              </ol>
+            </li>
+            <li>Médico
+              <ol type="i">
+                <li>Salud embarazo</li>
+                <li>Cuidados</li>
+                <li>Médico</li>
+                <li>Manejo de complicaciones</li>
+                <li>Colaboración interdisciplinaria</li>
+                <li>Tema libre</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>El usuario selecciona la opción deseada y da click en ella</li>
+        <li>El sistema redirigue a la pagina donde se muestra la lista de las publicaciones creadas, en caso de tardanza
+          o error pasa a FA-A</li>
+        <li>Termina el caso de uso</li>
+      </ol>
+      <b>Flujo Alterno A:</b>
+      <ol>
+        <li>Muestra el mensaje “Hubo un error, intente más tarde” y redirige a la “Pantalla de inicio”</li>
+        <li>Termina el caso de uso</li>
+      </ol>
+
+      </p>
+
+      <div class="d-flex justify-content-center">
+        <div>
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI30.png" style="width: 500px; height: auto;" /><br>
+              <small>UI30 Foros disponibles para personas embarazadas</small>
+            </div>
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI31.png" style="width: 500px; height: auto;" /><br>
+              <small>UI31 Foros disponibles para médicos</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <p>
+        <b>Nombre:</b> Realizar publicación en foro<br>
+        <b>Identificador:</b> C.U. 24<br>
+        <b>Descripción:</b> Permite compartir ideas o iniciar discusiones sobre un tema específico acorde con el tema
+        principal
+        del foro.<br>
+        <b>Precondiciones:</b> Entrar en la sección de Foros y haber seleccionado un tema<br>
+        <b>Postcondiciones:</b> Creación y visualización de la publicación en la lista del foro<br>
+        <b>Flujo básico:</b>
+      <ol>
+        <li>El usuario da click en el botón crear publicación.</li>
+        <li>El sistema despliega un formulacio que pida el “Nombre del subforo” y “Descripcion”.</li>
+        <li>El usuario da click en el botón “Crear”.</li>
+        <li>El sistema redirige a la lista de publicaciones que se tienen en el foro.</li>
+        <li>Termina el caso de uso</li>
+      </ol>
+      </p>
+      <div class="d-flex justify-content-center">
+        <div>
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI32.png" style="width: 500px; height: auto;" /><br>
+              <small>UI32 Lista de foros dentro de un tema</small>
+            </div>
+            <div class="col-md-6 col-12">
+              <img src="img/iter1/pantallas/UI33.png" style="width: 500px; height: auto;" /><br>
+              <small>UI33 Formulario de creación de foro</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <p>
+      <b>Nombre:</b> Eliminar publicación<br>
+      <b>Identificador:</b> C.U. 25<br>
+      <b>Descripción:</b> Permite eliminar publicaciones que haya realizado previamente, según sea necesario.<br>
+      <b>Precondiciones:</b> Entrar en la sección de Foros y haber seleccionado un tema<br>
+      <b>Postcondiciones:</b> Eliminación de la publicación de la lista del foro<br>
+      <b>Flujo básico:</b>
+    <ol>
+      <li>El usuario da click en su publicación.</li>
+      <li>El sistema edirige a la pagina en la cual se ve la publicación.</li>
+      <li>El usuario da click en el botón “Eliminar”.</li>
+      <li>El sistema despliega el aviso “Esta a punto de eliminar esta publicacion, quiere hacerlo?” , mostrando los
+        botones “Confirmar” y “Cancelar”.</li>
+      <li>El usuario da click en el botón “Confirmar”, en caso contrario se pasa al FA-A.</li>
+      <li>El sistema eliminará la publicación actual y redirigirá hacia la página donde se muestra la lista de
+        publicaciones abiertas.</li>
+      <li>El sistema mostrara el mensaje de “Publicación eliminada exitosamente”.</li>
+      <li>Termina el caso de uso.</li>
+    </ol>
+    <b>FLUJO ALTERNO A (FA-A):</b>
+    <ol>
+      <li>El sistema cancelará la eliminación de la publicación.</li>
+      <li>El sistema mostrara el mensaje de “Cancelación exitosa”.</li>
+      <li>Termina el caso de uso.</li>
+    </ol>
+    </p>
+    <div class="d-flex justify-content-center">
       <div>
-        <h5>Caso de uso: </h5>
-        <h5>Requerimientos asociados: </h5>
-        <h5>Diagrama de caso de uso: </h5>
-        <h5>Especificación de caso de uso: </h5>
-        <h5>GUI relevante: </h5>
+        <div class="row">
+          <div class="col-12">
+            <img src="img/iter1/pantallas/UI34.png" style="width: 500px; height: auto;" /><br>
+            <small>UI34 Pantalla de visualización de un foro</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      <b>Nombre:</b> Añadir comentario<br>
+      <b>Identificador:</b> C.U. 26<br>
+      <b>Descripción:</b> Permite interactuar con publicaciones existentes, ofreciendo opiniones o respuestas.<br>
+      <b>Precondiciones:</b> Entrar en una publicación.<br>
+      <b>Postcondiciones:</b> Se creara el apartado del comentario en la publicación asociada.<br>
+      <b>Flujo básico:</b>
+    <ol>
+      <li>El usuario da click en el botón añadir una respuesta.</li>
+      <li>El sistema despliega el apartado para añadir la respuesta.</li>
+      <li>El usuario da click en el botón responder.</li>
+      <li>El sistema redirige a la página de la publicación.</li>
+    </ol>
+    </p>
+    <div class="d-flex justify-content-center">
+      <div>
+        <div class="row">
+          <div class="col-12">
+            <img src="img/iter1/pantallas/UI35.png" style="width: 500px; height: auto;" /><br>
+            <small>UI35 Formulario de respuesta a un foro</small>
+          </div>
+        </div>
       </div>
     </div>
 
-    <footer name="footer" id="footer" class="footer">
-      <br>
-      <center>By Asteria®</center>
-          </footer>
-  </body>
+    <p>
+      <b>Nombre:</b> Eliminar comentario<br>
+      <b>Identificador:</b> C.U. 27<br>
+      <b>Descripción:</b> Permite eliminar comentarios que haya realizado previamente, según sea necesario.<br>
+      <b>Precondiciones:</b> Entrar en una publicación en la cual haya realizado al menos un comentario.<br>
+      <b>Postcondiciones:</b> Eliminación del comentario de la publicación.<br>
+      <b>Flujo básico:</b>
+      <ol>
+        <li>El usuario busca el comentario que hizo y da click en el botón “Eliminar”.</li>
+        <li>El sistema despliega el aviso “Esta a punto de eliminar este comentario, quiere hacerlo?” , mostrando los
+          botones “Confirmar” y “Cancelar”.</li>
+        <li>El usuario da click en el botón “Confirmar”, en caso contrario se pasa al FA-A.</li>
+        <li>El sistema elimina el comentario y recarga la página de la publicación, mostrando el mensaje “Comentario
+          eliminado exitosamente”.</li>
+        <li>Termina el caso de uso.</li>
+      </ol>
+      <b>FLUJO ALTERNO A (FA-A):</b>
+      <ol>
+        <li>El sistema cancelará la eliminación del comentario.</li>
+        <li>El sistema mostrara el mensaje de “Cancelación exitosa”.</li>
+        <li>Termina el caso de uso.</li>
+      </ol>
+    </p>
+    <div class="d-flex justify-content-center">
+      <div>
+        <div class="row">
+          <div class="col-12">
+            <img src="img/iter1/pantallas/UI36.png" style="width: 500px; height: auto;" /><br>
+            <small>UI36 Comentarios dentro de un foro</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+
+
+  </div>
+
+  <footer name="footer" id="footer" class="footer">
+    <br>
+    <center>By Asteria®</center>
+  </footer>
+</body>
+
 </html>
