@@ -2,68 +2,475 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="rhea.css" media="screen">
-  <link id="u-theme-google-font" rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-  <title>GAIA</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="rhea.css" media="screen">
+     <link id="u-theme-google-font" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+     <title>GAIA</title>
 </head>
 
 <body bgcolor="#000E29">
-  <nav class="navbar navbar-expand-lg border-bottom" style="background-color: white;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="img/logo2.png" class="logo" alt="logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" style="color: pink;">GAIA</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              ITERACIÓN 0
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="index.html">Inicio</a></li>
-              <li><a class="dropdown-item" href="requerimientos.html">RF, RNF, RX, BR</a></li>
-              <li><a class="dropdown-item" href="contexto.html">Diagramas de contexto</a></li>
-              <li><a class="dropdown-item" href="cdu.html">Casos de uso</a></li>
-              <li><a class="dropdown-item" href="domcrc.html">Modelo de dominio</a></li>
-              <li><a class="dropdown-item" href="clases.html">Diagrama de clases y E-R</a></li>
-              <li><a class="dropdown-item" href="paquetes.html">Diagrama de paquetes</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="iter1.html">ITERACIÓN 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="iter2.html">ITERACIÓN 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="iter3.html">ITERACIÓN 3</a>
-          </li>
-          <li class="nav-item float-right ">
-            <a class="nav-link" href="Asteria.html" style="color:#AD9F71">SOBRE NOSOTROS</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="container">
-    ... nada que ver aquí
-  </div>
-  
-  <footer name="footer" id="footer" class="footer">
-    <br>
-    <center>By Asteria®</center>
-  </footer>
+     <nav class="navbar navbar-expand-lg border-bottom" style="background-color: white;">
+          <div class="container-fluid">
+               <a class="navbar-brand" href="#"><img src="img/logo2.png" class="logo" alt="logo"></a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                         <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="index.html"
+                                   style="color: pink;">GAIA</a>
+                         </li>
+                         <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="index.html" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                   ITERACIÓN 0
+                              </a>
+                              <ul class="dropdown-menu">
+                                   <li><a class="dropdown-item" href="index.html">Inicio</a></li>
+                                   <li><a class="dropdown-item" href="requerimientos.html">RF, RNF, RX, BR</a></li>
+                                   <li><a class="dropdown-item" href="contexto.html">Diagramas de contexto</a></li>
+                                   <li><a class="dropdown-item" href="cdu.html">Casos de uso</a></li>
+                                   <li><a class="dropdown-item" href="domcrc.html">Modelo de dominio</a></li>
+                                   <li><a class="dropdown-item" href="clases.html">Diagrama de clases y E-R</a></li>
+                                   <li><a class="dropdown-item" href="paquetes.html">Diagrama de paquetes</a></li>
+                              </ul>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="iter1.html">ITERACIÓN 1</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link active" href="iter2.html">ITERACIÓN 2</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="iter3.html">ITERACIÓN 3</a>
+                         </li>
+                         <li class="nav-item float-right ">
+                              <a class="nav-link" href="Asteria.html" style="color:#AD9F71">SOBRE NOSOTROS</a>
+                         </li>
+                    </ul>
+               </div>
+          </div>
+     </nav>
+     <div class="container">
+          <h1>Backlog de requerimientos funcionales para la segunda iteración</h1>
+          <table class="table table-bordered">
+               <thead>
+                    <th>Id.</th>
+                    <th>Requerimiento</th>
+                    <th>HIP</th>
+                    <th>HRP</th>
+                    <th>Encargado</th>
+               </thead>
+               <tbody>
+                    <tr>
+                         <td>
+                              RF19.
+                         </td>
+                         <td>
+                              El usuario debería poder agendar una cita, con los datos definidos en la BR5.
+
+                         </td>
+                         <td>
+                              6
+                         </td>
+                         <td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF20.
+                         </td>
+                         <td>
+                              El usuario debería poder modificar una cita previamente agendada, con los datos definidos
+                              en la BR5.
+                         </td>
+                         <td>
+                              3
+                         </td>
+                         <td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF21.
+                         </td>
+                         <td>
+                              El usuario debería poder consultar las citas previamente agendadas.
+                         </td>
+                         <td>
+                              2
+                         </td>
+                         <td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF22.
+                         </td>
+                         <td>
+                              El usuario debería poder cancelar las citas previamente agendadas.
+                         </td>
+                         <td>
+                              2
+                         </td>
+                         <td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF23.
+                         </td>
+                         <td>
+                              El usuario debería poder acceder a los foros predeterminados por el sistema.
+                         </td>
+                         <td>
+                              2
+                         </td>
+                         <td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF24.
+                         </td>
+                         <td>
+                              El usuario debería poder realizar publicaciones (definidas en la BR6) en los foros
+                              predeterminados por el
+                              sistema.
+                         </td>
+                         <td>
+                              5
+                         </td>
+                         <td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF25.
+                         </td>
+                         <td>
+                              El usuario debería poder eliminar las publicaciones que ha hecho en los foros
+                              predeterminados por el
+                              sistema.
+                         </td>
+                         <td>1.5</td>
+                         <td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF26.
+                         </td>
+                         <td>
+                              El usuario debería poder replicar (las replicas están definidos en la BR7) las
+                              publicaciones de otros
+                              usuarios en los foros predeterminados por el sistema.
+                         </td>
+                         <td>
+                              3
+                         </td>
+                         <td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF27.
+                         </td>
+                         <td>
+                              El usuario debería poder eliminar las replicas que ha realizado previamente en las
+                              publicaciones de otros
+                              usuarios en los foros predeterminados por el sistema.
+                         </td>
+                         <td>
+                              1.5
+                         </td>
+                         <td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF28.
+                         </td>
+                         <td>
+                              El médico debería poder consultar los registros de síntomas guardados por las personas
+                              embarazadas que sean
+                              sus pacientes.
+                         </td>
+                         <td>
+                              2
+                         </td>
+                         <td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF34.
+                         </td>
+                         <td>
+                              El médico especialista debería poder ingresar sus horarios de consulta, incluyendo la
+                              longitud de una
+                              consulta.
+                         </td>
+                         <td>
+                              2.5
+                         </td>
+                         <td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF35.
+                         </td>
+                         <td>
+                              Al agendar una cita, el sistema debería de mostrar únicamente los horarios disponibles
+                              (sin cita) del
+                              médico.
+                         </td>
+                         <td>1</td>
+                         <td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF36.
+                         </td>
+                         <td>
+                              El usuario de tipo persona embarazada debería poder agregar médicos a su lista de médicos
+                              mediante su correo eletrónico asociado a su cuenta de GAIA.
+                         </td>
+                         <td>
+                              1.5
+                         </td>
+                         <td></td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF37.
+                         <td>
+                              El usuario de tipo persona embarazada debería de poder visualizar su lista de médicos.
+                         </td>
+                         <td>
+                              0.5
+                         </td>
+                         <td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF38
+                         <td>
+                              El usuario de tipo persona embarazada debería de poder eliminar un médico de su lista de
+                              médicos.
+                         </td>
+                         <td>
+                              0.5
+                         </td>
+                         <td></td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF39.
+                         <td>
+                              El usuario de tipo persona embarazada deberia de poder aceptar una solicitud de médico.
+                         </td>
+                         <td>
+                              0.5
+                         </td>
+                         <td></td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF40.
+                         <td>
+                              El usuario de tipo persona embarazada deberia de poder negar una solicitud de médico.
+                         </td>
+                         <td>
+                              0.5
+                         </td>
+                         <td></td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF41.
+                         </td>
+                         <td>
+                              El usuario de tipo médico debería poder agregar personas embarazadas a su lista de
+                              pacientes mediante su correo eletrónico
+                              asociado a su cuenta de GAIA.
+                         </td>
+                         <td>
+                              0.5
+                         </td>
+                         <td></td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF42.
+                         </td>
+                         <td>
+                              El usuario de tipo médico debería de poder visualizar su lista de pacientes.
+                         </td>
+                         <td>
+                              0.5
+                         </td>
+                         <td></td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF43.
+                         <td>
+                              El usuario de tipo médico debería de poder eliminar una persona embarazada de su lista de
+                              pacientes.
+                         </td>
+                         <td>
+                              0.5
+                         </td>
+                         <td></td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF44.
+                         <td>
+                              El usuario de tipo médico deberia de poder aceptar una solicitud de paciente.
+                         </td>
+                         <td>
+                              0.5
+                         </td>
+                         <td></td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              RF45.
+                         <td>
+                              El usuario de tipo médico deberia de poder negar una solicitud de paciente.
+                         </td>
+                         <td>
+                              0.5
+                         </td>
+                         <td></td>
+
+                         </td>
+                         <td>
+
+                         </td>
+                    </tr>
+                    <tr>
+                         <td colspan="2">
+                              <div class="d-flex justify-content-end">
+                                   <b>Total HIP</b>
+                              </div>
+                         </td>
+                         <td>35.5</td>
+                    </tr>
+               </tbody>
+          </table>
+     </div>
+
+     <footer name="footer" id="footer" class="footer">
+          <br>
+          <center>By Asteria®</center>
+     </footer>
 </body>
 
 </html>
