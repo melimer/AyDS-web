@@ -717,7 +717,7 @@
                </div>
                <p>
                     <b>Nombre:</b> Enviar mensaje directo<br>
-                    <b>Identificador:</b> CU 32<br>
+                    <b>Identificador:</b> CU 29<br>
                     <b>Descripción:</b> Un usuario envía un mensaje directo a otro usuario.<br>
                     <b>Precondiciones:</b> El usuario se ha identificado previamente dentro del sistema.<br>
                     <b>Postcondiciones:</b> Un mensaje directo se envía a otro usuario.<br>
@@ -766,7 +766,7 @@
 
                <p>
                     <b>Nombre:</b> Recibir mensaje directo<br>
-                    <b>Identificador:</b> CU 33<br>
+                    <b>Identificador:</b> CU 30<br>
                     <b>Descripción:</b> Un usuario visualiza un mensaje nuevo recibido.<br>
                     <b>Precondiciones:</b> El usuario se ha identificado previamente dentro del sistema.<br>
                     <b>Postcondiciones:</b> Se despliega en pantalla el mensaje nuevo recibido.<br>
@@ -905,35 +905,7 @@
                     </div>
                </div>
 
-               <p>
-                    <b>Nombre:</b> Eliminar publicación<br>
-                    <b>Identificador:</b> CU 25<br>
-                    <b>Descripción:</b> Permite eliminar publicaciones que haya realizado previamente, según sea
-                    necesario.<br>
-                    <b>Precondiciones:</b> Entrar en la sección de Foros y haber seleccionado un tema<br>
-                    <b>Postcondiciones:</b> Eliminación de la publicación de la lista del foro<br>
-                    <b>Flujo básico:</b>
-               <ol>
-                    <li>El usuario da click en su publicación.</li>
-                    <li>El sistema edirige a la pagina en la cual se ve la publicación.</li>
-                    <li>El usuario da click en el botón “Eliminar”.</li>
-                    <li>El sistema despliega el aviso “Esta a punto de eliminar esta publicacion, quiere hacerlo?” ,
-                         mostrando los
-                         botones “Confirmar” y “Cancelar”.</li>
-                    <li>El usuario da click en el botón “Confirmar”, en caso contrario se pasa al FA-A.</li>
-                    <li>El sistema eliminará la publicación actual y redirigirá hacia la página donde se muestra la
-                         lista de
-                         publicaciones abiertas.</li>
-                    <li>El sistema mostrara el mensaje de “Publicación eliminada exitosamente”.</li>
-                    <li>Termina el caso de uso.</li>
-               </ol>
-               <b>FLUJO ALTERNO A (FA-A):</b>
-               <ol>
-                    <li>El sistema cancelará la eliminación de la publicación.</li>
-                    <li>El sistema mostrara el mensaje de “Cancelación exitosa”.</li>
-                    <li>Termina el caso de uso.</li>
-               </ol>
-               </p>
+               
                <div class="d-flex justify-content-center">
                     <div>
                          <div class="row">
@@ -946,14 +918,14 @@
                </div>
                <p>
                     <b>Nombre:</b> Añadir comentario<br>
-                    <b>Identificador:</b> CU 26<br>
+                    <b>Identificador:</b> CU 25<br>
                     <b>Descripción:</b> Permite interactuar con publicaciones existentes, ofreciendo opiniones o
                     respuestas.<br>
                     <b>Precondiciones:</b> Entrar en una publicación.<br>
                     <b>Postcondiciones:</b> Se creara el apartado del comentario en la publicación asociada.<br>
                     <b>Flujo básico:</b>
                <ol>
-                    <li>El usuario da click en el botón añadir una respuesta.</li>
+                    <li>l usuario da click en el botón añadir una respuesta.</li>
                     <li>El sistema despliega el apartado para añadir la respuesta.</li>
                     <li>El usuario da click en el botón responder.</li>
                     <li>El sistema redirige a la página de la publicación.</li>
@@ -969,47 +941,6 @@
                          </div>
                     </div>
                </div>
-
-               <p>
-                    <b>Nombre:</b> Eliminar comentario<br>
-                    <b>Identificador:</b> CU 27<br>
-                    <b>Descripción:</b> Permite eliminar comentarios que haya realizado previamente, según sea
-                    necesario.<br>
-                    <b>Precondiciones:</b> Entrar en una publicación en la cual haya realizado al menos un
-                    comentario.<br>
-                    <b>Postcondiciones:</b> Eliminación del comentario de la publicación.<br>
-                    <b>Flujo básico:</b>
-               <ol>
-                    <li>El usuario busca el comentario que hizo y da click en el botón “Eliminar”.</li>
-                    <li>El sistema despliega el aviso “Esta a punto de eliminar este comentario, quiere hacerlo?” ,
-                         mostrando
-                         los
-                         botones “Confirmar” y “Cancelar”.</li>
-                    <li>El usuario da click en el botón “Confirmar”, en caso contrario se pasa al FA-A.</li>
-                    <li>El sistema elimina el comentario y recarga la página de la publicación, mostrando el mensaje
-                         “Comentario
-                         eliminado exitosamente”.</li>
-                    <li>Termina el caso de uso.</li>
-               </ol>
-               <b>FLUJO ALTERNO A (FA-A):</b>
-               <ol>
-                    <li>El sistema cancelará la eliminación del comentario.</li>
-                    <li>El sistema mostrara el mensaje de “Cancelación exitosa”.</li>
-                    <li>Termina el caso de uso.</li>
-               </ol>
-               </p>
-               <div class="d-flex justify-content-center">
-                    <div>
-                         <div class="row">
-                              <div class="col-12">
-                                   <img src="img/iter1/pantallas/UI36.png" style="width: 500px; height: auto;" /><br>
-                                   <small>UI36 Comentarios dentro de un foro</small>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-
-
 
           </div>
      </div>
